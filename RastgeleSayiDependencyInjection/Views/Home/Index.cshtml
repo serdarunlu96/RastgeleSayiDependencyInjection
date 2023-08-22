@@ -1,0 +1,25 @@
+﻿@inject RastgeleBirSayi RastgeleSayiViewEnjekte
+@{
+    ViewData["Title"] = "Home Page";
+    RastgeleBirSayi rbs = new RastgeleBirSayi();
+}
+
+<p>
+    Controller'da new'leyerek olusturdugumuz RastgeleBirSayi nesnesinden gelen deger: <strong>@ViewBag.RastgeleSayi</strong>
+</p>
+
+<p>
+    View uzerınde olusan neseneden gelen rastgele sayı: <strong>@rbs.Deger</strong>
+</p>
+
+<p>
+    Home Controller'a Enjekte olup da gelen Rastgele sayi: <strong>@ViewBag.RastgeleSayiHomeEnjekte</strong>
+</p>
+
+<p>
+    View'e "enjekte edilen" rastgele sayi servisinden gelen rastgele sayi <strong>@RastgeleSayiViewEnjekte.Deger</strong>
+</p>
+
+<p>
+    Home Controller Index Action'ı uzerınde parametre olarak enjekte edilen gelen rastgele sayi <strong>@ViewBag.RastgeleSayiActionEnjekte</strong>
+</p>
